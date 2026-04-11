@@ -176,3 +176,34 @@ var allItems = {
     }
 }
 
+
+var allBagsCards =document.getElementById("allBagsCards");
+for (var products in allItems) {
+  console.log(allItems[products]);
+}
+
+
+
+
+(async () => {
+  await loadLinksPreset(tsParticles);
+
+  await tsParticles.load({
+    id: "tsparticles",
+    options: {
+      preset: "links",
+    },
+  });
+})();
+
+tsParticles.load({
+  id: "tsparticles",
+  options: {
+    particles: {
+      shape: {
+        type: "square", // starting from v2, this require the square shape script
+      },
+    },
+    preset: "links",
+  },
+});
