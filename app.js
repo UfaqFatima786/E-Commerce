@@ -28,14 +28,14 @@ var allItems = {
                 src: "https://bachaaparty.com/cdn/shop/files/z1670600109_2.jpg?v=1767189066&width=540",
                 description: "A durable school bag for students.",
             },
-             brownishPlainBag: {
+            brownishPlainBag: {
                 name: "School Bag",
                 price: "2500 PKR",
                 src: "https://bachaaparty.com/cdn/shop/files/z1670580109_2.jpg?v=1767189023&width=540",
                 description: "A durable school bag for students.",
 
             },
-             BlackPinkishPlainBag: {
+            BlackPinkishPlainBag: {
                 name: "School Bag",
                 price: "2500 PKR",
                 src: "https://bachaaparty.com/cdn/shop/files/z1670590109_2.jpg?v=1767188988&width=540",
@@ -43,14 +43,14 @@ var allItems = {
 
             },
         },
-         stylishSchoolBags: {
+        stylishSchoolBags: {
             redStylishSchoolBag: {
                 name: "School Bag",
                 price: "4500 PKR",
                 src: "https://bachaaparty.com/cdn/shop/files/BPE_4879_03d5e046-91f3-47e3-a93f-7b105b06357f.jpg?v=1769521181&width=540",
                 description: "A durable school bag for students.",
             },
-             blueStylishSchoolBag: {
+            blueStylishSchoolBag: {
                 name: "School Bag",
                 price: "4000 PKR",
                 src: "https://bachaaparty.com/cdn/shop/files/BPE_4884_a383c7f4-d626-4253-bef1-99a94bba269e.jpg?v=1769521214&width=540",
@@ -70,47 +70,45 @@ var allItems = {
                 src: "https://bachaaparty.com/cdn/shop/files/z1670600109_2.jpg?v=1767189066&width=540",
                 description: "A durable school bag for students.",
             },
-             brownishPlainBag: {
+            brownishPlainBag: {
                 name: "School Bag",
                 price: "2500 PKR",
                 src: "https://bachaaparty.com/cdn/shop/files/z1670580109_2.jpg?v=1767189023&width=540",
                 description: "A durable school bag for students.",
 
             },
-             BlackPinkishPlainBag: {
+            BlackPinkishPlainBag: {
                 name: "School Bag",
                 price: "2500 PKR",
                 src: "https://bachaaparty.com/cdn/shop/files/z1670590109_2.jpg?v=1767188988&width=540",
                 description: "A durable school bag for students.",
-
             },
         },
-
-
-rollingSchoolBags: {
-            yellowGreyishPlainBag: {
-                name: "School Bag",
-                price: "2500 PKR",
+        rollingSchoolBags: {
+            flowerRollingBag: {
+                name: "flowerRollingBag",
+                price: "5000 PKR",
                 src: "https://bachaaparty.com/cdn/shop/files/DSC_5177_d6d70cd1-12b7-467e-8a5a-82b3497e38ad.jpg?v=1772183841&width=540",
                 description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
             },
-             brownishPlainBag: {
-                name: "School Bag",
-                price: "2500 PKR",
-                src: "https://bachaaparty.com/cdn/shop/files/z1670580109_2.jpg?v=1767189023&width=540",
+            spiderRollingBag: {
+                name: "spiderRollingBag",
+                price: "5000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_5187_f915dee8-233c-4e45-bbf8-a14206dbad2c.jpg?v=1772183894&width=540",
                 description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
 
             },
-             BlackPinkishPlainBag: {
-                name: "School Bag",
-                price: "2500 PKR",
-                src: "https://bachaaparty.com/cdn/shop/files/z1670590109_2.jpg?v=1767188988&width=540",
+            batsmanRollingBag: {
+                name: "batsmanRollingBag",
+                price: "5000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_6730_5e446e9a-9d44-4097-be6f-d90b74bee506.jpg?v=1772263981&width=540",
                 description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
 
             },
         },
-
-
     },
 
     ladiesBags: {
@@ -177,3 +175,4 @@ rollingSchoolBags: {
 
     }
 }
+
