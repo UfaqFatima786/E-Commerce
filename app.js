@@ -340,7 +340,47 @@ var allProducts = {
                     src: "https://cdn.shopify.com/s/files/1/2337/7003/files/media_image-1f6316c115bc4256a6abd49fce409cf5.webp?width=300&format=webp",
                     description: "A stylish ladies bag for everyday use.",
                 },
-            }
+            },
+              ladiesStylishHandBags: {
+                brownHandyBag: {
+                    name: "Brown Bag",
+                    price: "6000 PKR",
+                    src: "https://aodour.pk/cdn/shop/files/78a42c6d-bd06-412d-b035-698d2ec2340f.png?v=1775827485&width=500",
+                    description: "A stylish ladies bag for everyday use.",
+                },
+                whiteHandyBag: {
+                    name: "White Bag",
+                    price: "4000 PKR",
+                    src: "https://aodour.pk/cdn/shop/files/10d4fcfb-c056-420b-b2d3-e86b47289e6a.webp?v=1775813248&width=500",
+                    description: "A stylish ladies bag for everyday use.",
+                },
+                blackHandyBag: {
+                    name: "Stylish Black Bag",
+                    price: "4000 PKR",
+                    src: "https://cdn.shopify.com/s/files/1/0639/2909/0243/files/001994-Black-8.jpg?v=1775293360",
+                    description: "A stylish ladies bag for everyday use.",
+                },
+            },
+             qualityhHandBags: {
+                brownBag: {
+                    name: "Brown Simple Bag",
+                    price: "15000 PKR",
+                    src: "https://jafferjees.com/cdn/shop/files/002186_Gold_-_2.jpg?v=1763630750&width=360",
+                    description: "A stylish ladies bag for everyday use.",
+                },
+                darkBrownBag: {
+                    name: "Dark Brown Simple Bag",
+                    price: "4000 PKR",
+                    src: "https://cdn.shopify.com/s/files/1/0639/2909/0243/files/002213_Copper_-_2.jpg?v=1763630920",
+                    description: "A stylish ladies bag for everyday use.",
+                },
+                cgreenBag: {
+                    name: "Cgreen Bag",
+                    price: "4000 PKR",
+                    src: "https://cdn.shopify.com/s/files/1/0639/2909/0243/files/DSC04185_47b2cfe7-77d1-493f-8020-47c042fbac70.jpg?v=1759220637",
+                    description: "A stylish ladies bag for everyday use.",
+                },
+            },
 
         }
     }
