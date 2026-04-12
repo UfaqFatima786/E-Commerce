@@ -7,5 +7,15 @@
     width: 100%;
 }
  .bags{
-    color: blue;
+     color: rgb(3, 3, 248);
+    background-color: black;
+    border-radius: 2px solid red;
+    box-shadow: 2px slid red;
+ }
+ .bags:hover{
+    color: rgb(1, 1, 141);
+    background-color: rgb(119, 117, 117);
+    border: #333;
+    text-shadow: rgb(180, 2, 2);
+    cursor: pointer;
  }

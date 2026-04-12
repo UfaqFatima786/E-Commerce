@@ -221,7 +221,7 @@ var allProducts = {
             simplegreySchoolBag: {
                 name: "grey Simple School Bag",
                 price: "3000 PKR",
-                src: "https://bachaaparty.com/cdn/shop/files/BPE_8485_74879c15-0c98-42ba-a6df-df8bb6eb51bb.jpg?v=1767363544&width=540",
+                src: "https://bembel.com/cdn/shop/files/BM250117-12_21.jpg?v=1740131421&width=480",
                 description: "A durable school bag for students.",
                 button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
 
@@ -244,10 +244,35 @@ var allProducts = {
                 button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
 
             },
-            threedBlackEmbossedSchoolBag: {
-                name: "3D Black Embossed School Bag",
+            threedRedEmbossedSchoolBag: {
+                name: "3D Red Spider Embossed School Bag",
                 price: "3000 PKR",
-                src: "https://bachaaparty.com/cdn/shop/files/DSC_6772_41e7c988-092e-4b24-a0fc-2812e6f340d6.jpg?v=1773729566&width=540",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_6768_74bda741-1522-4fe1-8e99-dde1a851073a.jpg?v=1773729528&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+        },
+        designingSchoolBags: {
+            redDesignSchoolBag: {
+                name: "Red Design School Bags",
+                price: "6000 PKR",
+                src: "https://bembel.com/cdn/shop/files/IMG_5153.jpg?v=1752737551&width=480",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+            },
+            orangPinguinSchoolBag: {
+                name: "Pinguin School Bag",
+                price: "4000 PKR",
+                src: "	https://bembel.com/cdn/shop/files/7_f654ef3a-1af9-4083-a480-a467904dbf56.jpg?v=1739436684&width=480",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+            purpleEasySchoolBag: {
+                name: "Purple School Bag",
+                price: "5000 PKR",
+                src: "	https://bembel.com/cdn/shop/files/DSC04169copy.jpg?v=1751016339&width=480",
                 description: "A durable school bag for students.",
                 button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
 
@@ -324,24 +349,24 @@ var allProducts = {
 var allCards = document.getElementById("allBagsCards");
 for (var maincategory in allProducts) {
   // console.log(allProducts[products]);
-  for (var categories in allProducts[maincategory]) {
+  for (var subcategory in allProducts[maincategory]) {
     // console.log(allProducts[maincategory][categories]);
-    for (var brands in allProducts[maincategory][categories]) {
+    for (var type in allProducts[maincategory][subcategory]) {
       // console.log(allProducts[maincategory][categories][brands]);
-      for (var items in allProducts[maincategory][categories][brands]) {
+      for (var product in allProducts[maincategory][subcategory][type]) {
         // console.log(allProducts[maincategory][categories][brands][items].price);
         allCards.innerHTML += `
                 <div class="col">
           <div class="card h-100">
-            <img src="${allProducts[maincategory][categories][brands][items].src}" class="card-img-top" alt="..." />
+            <img src="${allProducts[maincategory][subcategory][type][product].src}" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">${allProducts[maincategory][categories][brands][items].name.toUpperCase()}</h5>
+              <h5 class="card-title">${allProducts[maincategory][subcategory][type][product].name.toUpperCase()}</h5>
               <p class="card-text">
-               ${allProducts[maincategory][categories][brands][items].description}
+               ${allProducts[maincategory][subcategory][type][product].description}
               </p>
             </div>
             <div class="card-footer">
-              <small class="text-body-secondary">Price: ${allProducts[maincategory][categories][brands][items].price}/-</small> <button class="bg-tertiary text-white px-2 py-2 rounded border-0"> Add to Cart </button>
+              <small class="text-body-secondary">Price: ${allProducts[maincategory][subcategory][type][product].price}/-</small> <button class="bg-tertiary text-white px-2 py-2 rounded border-0"> Add to Cart </button>
             </div>
           </div>
         </div>`;
