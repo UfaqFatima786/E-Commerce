@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #333;
+    background-color: #010358;
     color: #fff;
     position: fixed;
     top: 0px;
@@ -42,4 +42,72 @@
 }
 .price{
     color: white;
+}
+
+.container{
+    background-color: #6f7dff;
+}
+.footer{
+        background-color: #010358;
+
+}
+
+.footer {
+  background-color: #2b3f97;
+  color: white;
+  padding: 40px 0 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 30%;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-col ul li a:hover {
+  color: #9ecbff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive mobile layout */
+@media(max-width:768px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
