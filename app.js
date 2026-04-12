@@ -1,26 +1,29 @@
-var allItems = {
-    schoolBags: {
-        cartoonishSchoolBags: {
-            blackCartoonishBag: {
-                name: "School Bag",
-                price: "3000 PKR",
-                description: "A durable school bag for students.",
-                src: "https://bachaaparty.com/cdn/shop/files/Z167969-1.jpg?v=1766991533&width=540",
-            },
-            blueCartoonishBag: {
-                name: "School Bag",
-                price: "2000 PKR",
-                description: "A durable school bag for students.",
-                src: "https://bachaaparty.com/cdn/shop/files/Z167967-1.jpg?v=1766991596&width=540",
-            },
-            purpleCartoonishBag: {
-                name: "School Bag",
-                price: "2000 PKR",
-                description: "A durable school bag for students.",
-                src: "https://bachaaparty.com/cdn/shop/files/Z146950.jpg?v=1751285902&width=540",
-            },
-            src: "https://bachaaparty.com/cdn/shop/files/z1670600109_2.jpg?v=1767189066&width=540",
+var allProducts = {
+  accessories: {
+    bags: {
+      oneColorSchoolBags: {
+        blackCartoonishBag: {
+          name: "School Bag",
+          price: "3000 PKR",
+          description: "A durable school bag for students.",
+          src: "https://bachaaparty.com/cdn/shop/files/Z167969-1.jpg?v=1766991533&width=540",
         },
+
+        blueBag: {
+          name: "School Bag",
+          price: "2000 PKR",
+          description: "A durable school bag for students.",
+          src: "https://bachaaparty.com/cdn/shop/files/Z167967-1.jpg?v=1766991596&width=540",
+        },
+
+        purpleBag: {
+          name: "School Bag",
+          price: "2000 PKR",
+          description: "A durable school bag for students.",
+          src: "https://bachaaparty.com/cdn/shop/files/Z146950.jpg?v=1751285902&width=540",
+        }
+      },
+
         twoColorSchoolBags: {
             yellowGreyishPlainBag: {
                 name: "School Bag",
@@ -43,54 +46,35 @@ var allItems = {
 
             },
         },
-        stylishSchoolBags: {
-            redStylishSchoolBag: {
-                name: "School Bag",
-                price: "4500 PKR",
-                src: "https://bachaaparty.com/cdn/shop/files/BPE_4879_03d5e046-91f3-47e3-a93f-7b105b06357f.jpg?v=1769521181&width=540",
-                description: "A durable school bag for students.",
-            },
-            blueStylishSchoolBag: {
-                name: "School Bag",
-                price: "4000 PKR",
-                src: "https://bachaaparty.com/cdn/shop/files/BPE_4884_a383c7f4-d626-4253-bef1-99a94bba269e.jpg?v=1769521214&width=540",
-                description: "A durable school bag for students.",
-            },
-            blueStylishSchoolBag: {
-                name: "School Bag",
-                price: "4000 PKR",
-                src: "https://bachaaparty.com/cdn/shop/files/BPE_4884_a383c7f4-d626-4253-bef1-99a94bba269e.jpg?v=1769521214&width=540",
-                description: "A durable school bag for students.",
-            },
-        },
-        simpleSchoolBags: {
-            yellowGreyishPlainBag: {
-                name: "School Bag",
-                price: "2500 PKR",
-                src: "https://bachaaparty.com/cdn/shop/files/z1670600109_2.jpg?v=1767189066&width=540",
-                description: "A durable school bag for students.",
-            },
-            brownishPlainBag: {
-                name: "School Bag",
-                price: "2500 PKR",
-                src: "https://bachaaparty.com/cdn/shop/files/z1670580109_2.jpg?v=1767189023&width=540",
-                description: "A durable school bag for students.",
+        // stylishSchoolBags: {
+        //     redStylishSchoolBag: {
+        //         name: "School Bag",
+        //         price: "4500 PKR",
+        //         src: "https://bachaaparty.com/cdn/shop/files/BPE_4879_03d5e046-91f3-47e3-a93f-7b105b06357f.jpg?v=1769521181&width=540",
+        //         description: "A durable school bag for students.",
+        //     },
+        //     redStylishSchoolBag: {
+        //         name: "School Bag",
+        //         price: "5000 PKR",
+        //         src: "https://bachaaparty.com/cdn/shop/files/BPE_4884_a383c7f4-d626-4253-bef1-99a94bba269e.jpg?v=1769521214&width=540",
+        //         description: "A durable school bag for students.",
+        //     },
+        //     redStylishSchoolBag: {
+        //         name: "School Bag",
+        //         price: "4500 PKR",
+        //         src: "https://bachaaparty.com/cdn/shop/files/BPE_4879_03d5e046-91f3-47e3-a93f-7b105b06357f.jpg?v=1769521181&width=540",
+        //         description: "A durable school bag for students.",
+        //     },
+            
+        // },
 
-            },
-            BlackPinkishPlainBag: {
-                name: "School Bag",
-                price: "2500 PKR",
-                src: "https://bachaaparty.com/cdn/shop/files/z1670590109_2.jpg?v=1767188988&width=540",
-                description: "A durable school bag for students.",
-            },
-        },
         rollingSchoolBags: {
             flowerRollingBag: {
                 name: "flowerRollingBag",
                 price: "5000 PKR",
                 src: "https://bachaaparty.com/cdn/shop/files/DSC_5177_d6d70cd1-12b7-467e-8a5a-82b3497e38ad.jpg?v=1772183841&width=540",
                 description: "A durable school bag for students.",
-                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+                button: "Add to Cart bg-tertiary text-white px-2 py-2 rounded",
             },
             spiderRollingBag: {
                 name: "spiderRollingBag",
@@ -104,6 +88,166 @@ var allItems = {
                 name: "batsmanRollingBag",
                 price: "5000 PKR",
                 src: "https://bachaaparty.com/cdn/shop/files/DSC_6730_5e446e9a-9d44-4097-be6f-d90b74bee506.jpg?v=1772263981&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+        },
+
+
+
+         doriSchoolBags: {
+            orangeBlueSchoolBag: {
+                name: "orange Blue School Bag",
+                price: "1500 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/BPE_9389_4785fb3f-b474-46a3-b303-54f8ff9b5347.jpg?v=1767856205&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+            },
+            greenDoriSchoolBag: {
+                name: "green Dori School Bag",
+                price: "1500 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/BPE_9376_e4c81812-3059-49e9-84be-dd0d7663007b.jpg?v=1767793256&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+            duckBluishBag: {
+                name: "duck Bluish Bag",
+                price: "5000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/BPE_9383_cab7e700-9029-43ea-b243-a693278fda0d.jpg?v=1767867668&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+        },
+
+
+          cuteSchoolBags: {
+            catPinkTrolleySchoolBag: {
+                name: "pink School Bag",
+                price: "3500 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_5660_299ab965-89e3-4813-8708-1c85fdab1f6d.jpg?v=1762407138&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+            },
+            blueTrolleySchoolBag: {
+                name: "dark blue Trolley School Bag",
+                price: "4000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_5684_fb96222f-a5f4-4f4d-b934-dd0117b2bf0f.jpg?v=1762407267&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+            bluishTrolleySchoolBag: {
+                name: "bluish Trolley School Bag",
+                price: "5000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_5678_69d45e4f-0503-446f-b4ac-72b6c3ec7dde.jpg?v=1762407236&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+        },
+
+
+         lightWeightSchoolBags: {
+            blueOrangeleafSchoolBag: {
+                name: "light Weight bluish School Bags",
+                price: "3500 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/Z1451660109.jpg?v=1753340197&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+            },
+            blueSmiggleSchoolBag: {
+                name: "blue Smiggle School Bag",
+                price: "4000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/Z1692340104_2.webp?v=1762340232&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+            darkBlueSmiggleSchoolBag: {
+                name: "dark Blue School Bag",
+                price: "5000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_5697_4da1c4b2-3d0e-4d08-a865-081427f2696f.jpg?v=1762514494&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+        },
+
+
+         easyLeveupSchoolBags: {
+            cartoonLevupSchoolBag: {
+                name: "cartoon Levup School Bags",
+                price: "4000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/Z146950.jpg?v=1751285902&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+            },
+            cartoonOrangeLevupSchoolBag: {
+                name: "cartoon Levup School Bag",
+                price: "5000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/Z146947.jpg?v=1751285771&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+            blueCartoonSchoolBag: {
+                name: "blue Cartoon School Bag",
+                price: "6000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_7419_90bc2f76-0f31-4c24-8fae-ac1c1d241c34.jpg?v=1766758091&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+        },
+        easySimpleSchoolBags: {
+            simpleBlackSchoolBag: {
+                name: "black Simple School Bags",
+                price: "4000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/BPE_8455_6d2c5b4e-f884-4da7-8453-908daff9a878.jpg?v=1767363369&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+            },
+            simpleSchoolBag: {
+                name: "blue School Bag",
+                price: "3500 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/Z146947.jpg?v=1751285771&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+            simplegreySchoolBag: {
+                name: "grey Simple School Bag",
+                price: "3000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/BPE_8485_74879c15-0c98-42ba-a6df-df8bb6eb51bb.jpg?v=1767363544&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+        },
+
+        threedEmbossedSchoolBags: {
+            threedEmbossedSchoolBag: {
+                name: "3D Embossed School Bags",
+                price: "4000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_0551_d802e4ee-c692-44ab-a3b7-8efd8e9d04ff.jpg?v=1773743580&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+            },
+            threedBlueEmbossedSchoolBag: {
+                name: "3D Blue Embossed School Bag",
+                price: "3500 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_6772_41e7c988-092e-4b24-a0fc-2812e6f340d6.jpg?v=1773729566&width=540",
+                description: "A durable school bag for students.",
+                button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
+
+            },
+            threedBlackEmbossedSchoolBag: {
+                name: "3D Black Embossed School Bag",
+                price: "3000 PKR",
+                src: "https://bachaaparty.com/cdn/shop/files/DSC_6772_41e7c988-092e-4b24-a0fc-2812e6f340d6.jpg?v=1773729566&width=540",
                 description: "A durable school bag for students.",
                 button: "Add to Cart bg-primary text-white px-4 py-2 rounded",
 
@@ -174,36 +318,34 @@ var allItems = {
         }
 
     }
+  }
 }
 
-
-var allBagsCards =document.getElementById("allBagsCards");
-for (var products in allItems) {
-  console.log(allItems[products]);
+var allCards = document.getElementById("allBagsCards");
+for (var maincategory in allProducts) {
+  // console.log(allProducts[products]);
+  for (var categories in allProducts[maincategory]) {
+    // console.log(allProducts[maincategory][categories]);
+    for (var brands in allProducts[maincategory][categories]) {
+      // console.log(allProducts[maincategory][categories][brands]);
+      for (var items in allProducts[maincategory][categories][brands]) {
+        // console.log(allProducts[maincategory][categories][brands][items].price);
+        allCards.innerHTML += `
+                <div class="col">
+          <div class="card h-100">
+            <img src="${allProducts[maincategory][categories][brands][items].src}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">${allProducts[maincategory][categories][brands][items].name.toUpperCase()}</h5>
+              <p class="card-text">
+               ${allProducts[maincategory][categories][brands][items].description}
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Price: ${allProducts[maincategory][categories][brands][items].price}/-</small> <button class="bg-tertiary text-white px-2 py-2 rounded border-0"> Add to Cart </button>
+            </div>
+          </div>
+        </div>`;
+      }
+    }
+  }
 }
-
-
-
-
-(async () => {
-  await loadLinksPreset(tsParticles);
-
-  await tsParticles.load({
-    id: "tsparticles",
-    options: {
-      preset: "links",
-    },
-  });
-})();
-
-tsParticles.load({
-  id: "tsparticles",
-  options: {
-    particles: {
-      shape: {
-        type: "square", // starting from v2, this require the square shape script
-      },
-    },
-    preset: "links",
-  },
-});
