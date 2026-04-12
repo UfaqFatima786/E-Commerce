@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     background-color: #333;
     color: #fff;
     position: fixed;
@@ -6,16 +6,40 @@
     z-index: 1;
     width: 100%;
 }
- .bags{
-     color: rgb(3, 3, 248);
+
+.bags {
+    color: rgb(3, 3, 248);
     background-color: black;
     border-radius: 2px solid red;
     box-shadow: 2px slid red;
- }
- .bags:hover{
+}
+
+.bags:hover {
     color: rgb(1, 1, 141);
     background-color: rgb(119, 117, 117);
     border: #333;
     text-shadow: rgb(180, 2, 2);
     cursor: pointer;
- }
+}
+
+.card-bag-img-top {
+    height: 300px;
+    object-fit: contain;
+    color: #000;
+}
+.custom-body{
+    background-color: #2e3997;
+    color: #fff;
+}
+.custom-title{
+    color: #fff;
+}
+.card-text{
+    color: #fff;
+}
+.bag-footer{
+    background-color: #2e3997 !important;
+}
+.price{
+    color: white;
+}
