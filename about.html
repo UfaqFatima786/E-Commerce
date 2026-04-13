@@ -23,15 +23,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                        <a class="nav-link active link" aria-current="page" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                        <a class="nav-link active link" aria-current="page" href="Contact.html">Contact</a>
                     </li>
                 </ul>
+                <form class="d-flex form" role="search">
+            <select onchange="productChange()" name="products" id="productMenu">
+              <option value="">Select Main Category </option>
+            </select>&nbsp;&nbsp;
+
+            <select onchange="filterProduct()" name="category" id="categoryMenu">
+              <option value="">Select Sub Category </option>
+            </select>
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
             </div>
         </div>
     </nav>

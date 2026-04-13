@@ -12,6 +12,16 @@
     /* position: absolute; */
     right: 100px;
 }
+
+.navbar-nav{
+    color: white;
+}
+.navbar-nav .link {
+    color: white !important;
+}
+.navbar-nav .link:hover {
+    color: #9ecbff !important;
+}
 .bags {
     color: rgb(3, 3, 248);
     background-color: black;
