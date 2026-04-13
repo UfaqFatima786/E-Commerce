@@ -14,7 +14,7 @@
 
   <nav class="navbar navbar-expand-lg bagnavbar">
     <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="/images/logo navbar.png" class="logo"></a>
+      <a class="navbar-brand" href="#"><img src="/images/logo navbar.png" class="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,14 +24,25 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
           </li>
-          
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
+
+          <form class="d-flex form" role="search">
+            <select onchange="productChange()" name="products" id="productMenu">
+              <option value="">Select Main Category </option>
+            </select>&nbsp;&nbsp;
+
+            <select onchange="filterProduct()" name="category" id="categoryMenu">
+              <option value="">Select Sub Category </option>
+            </select>
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
       </div>
     </div>
   </nav>
@@ -56,42 +67,44 @@
       <div class="col-9 main-content">
         <h1 class="text-center bags mt-4 px-4 py-3">All Bags</h1>
         <div id="allBagsCards" class="mt-2 row row-cols-1 row-cols-md-3 g-4"></div>
+        <div id="cartItems"></div>
+        <div id="carouselExampleSlidesOnly"></div>
       </div>
     </div>
   </div>
   <footer class="footer mt-4">
-  <div class="footer-container">
+    <div class="footer-container">
 
-    <div class="footer-col">
-      <h3>BagStore</h3>
-      <p>
-        BagStore provides stylish and high-quality bags for every occasion.
-        Shop with confidence and upgrade your fashion today.
-      </p>
+      <div class="footer-col">
+        <h3>BagStore</h3>
+        <p>
+          BagStore provides stylish and high-quality bags for every occasion.
+          Shop with confidence and upgrade your fashion today.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>Email: support@bagstore.com</p>
+        <p>Phone: +92 300 1234567</p>
+        <p>Karachi, Pakistan</p>
+      </div>
+
     </div>
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
+
+    <div class="footer-bottom">
+      <p>© 2026 BagStore | All Rights Reserved</p>
     </div>
-
-    <div class="footer-col">
-      <h3>Contact Us</h3>
-      <p>Email: support@bagstore.com</p>
-      <p>Phone: +92 300 1234567</p>
-      <p>Karachi, Pakistan</p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 BagStore | All Rights Reserved</p>
-  </div>
-</footer>
+  </footer>
 
   <script
     src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-firefly@3/tsparticles.preset.firefly.bundle.min.js"></script>

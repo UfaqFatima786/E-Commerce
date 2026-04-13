@@ -341,7 +341,7 @@ var allProducts = {
                     description: "A stylish ladies bag for everyday use.",
                 },
             },
-              ladiesStylishHandBags: {
+            ladiesStylishHandBags: {
                 brownHandyBag: {
                     name: "Brown Bag",
                     price: "6000 PKR",
@@ -361,7 +361,7 @@ var allProducts = {
                     description: "A stylish ladies bag for everyday use.",
                 },
             },
-             qualityhHandBags: {
+            qualityhHandBags: {
                 brownBag: {
                     name: "Brown Simple Bag",
                     price: "15000 PKR",
@@ -385,6 +385,7 @@ var allProducts = {
         }
     }
 }
+var cart = [];
 
 var allCards = document.getElementById("allBagsCards");
 for (var maincategory in allProducts) {
@@ -409,10 +410,8 @@ for (var maincategory in allProducts) {
                               <small class="text-body-secondary price">
                              Price: ${allProducts[maincategory][subcategory][type][product].price}/-
                                   </small>
+                               <button onclick="addToCart('${maincategory}', '${subcategory}', '${type}', '${product}')" class="bg-primary text-white px-2 py-2 rounded border-0"> Add to Cart </button>
 
-                                  <button class="bg-primary text-white px-2 py-2 rounded border-0 mt-2">
-                                 Add to Cart
-                                  </button>
                        </div>
                         
                     </div>
@@ -421,6 +420,34 @@ for (var maincategory in allProducts) {
         }
     }
 }
+
+function addToCart(main, sub, type, product) {
+    var selectedProduct = allProducts[main][sub][type][product];
+    
+    var carousel = document.getElementById("carouselExampleSlidesOnly");
+    if(carousel) carousel.style.display = "none";
+
+    var mainContent = document.querySelector('.main-content');
+    mainContent.innerHTML = `
+        <h1 class="text-center text-success mt-4">Product Added Successfully!</h1>
+        <div class="card mt-4 p-4 shadow-lg mx-auto" style="max-width: 500px; border-radius: 15px; background: #c6bcffff;">
+            <img src="${selectedProduct.src}" class="card-img-top mx-auto" style="max-width: 350px; border-radius: 10px;" alt="...">
+            <div class="card-body text-center">
+                <h3 class="card-title text-primary fw-bold mt-2">${selectedProduct.name.toUpperCase()}</h3>
+                <p class="card-text fs-5 text-secondary mt-3">${selectedProduct.description || ''}</p>
+                <div class="mt-3">
+                    <h4 class="text-success fw-bold m-0 p-3" style="background: #e8f5e9; border-radius: 10px;">Price: ${selectedProduct.price}</h4>
+                </div>
+                <button onclick="location.reload()" class="btn btn-warning btn-lg mt-4 w-100 fw-bold">Continue Shopping</button>
+            </div>
+        </div>
+    `;
+}
+
+function showCart() {
+    // Keeping this function empty just in case it's referenced elsewhere
+}
+
 
 
 // (async () => {
